@@ -1,0 +1,101 @@
+
+.SearchBar {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-bottom: 5%
+}
+  
+.SearchBar input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+  
+.SearchBar button {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+  
+  .SearchBar button:hover {
+    background-color: darkblue;
+  }
+  
+  .Results {
+    height: 200px;
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0, 0.2);
+  }
+  
+  .Results img {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .Results .Description {
+    margin-left: 10px;
+  }
+  
+  .Results .Description h1 {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  
+  .Results .Description h3 {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .Results .Description h4 {
+    margin: 0;
+    color: #888;
+  }
+  
+  .Results:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .sliding-window {
+    position: fixed;
+    top: 0;
+    right: -50%;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .sliding-window.open {
+    right: 0;
+  }
+  
+  .sliding-content {
+    padding: 20px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
