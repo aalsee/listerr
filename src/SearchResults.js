@@ -65,8 +65,11 @@ function SearchResults() {
                 <Results onClick={handleResultClick} />
             </div>
             <SlidingWindow isOpen={isSlidingWindowOpen} onClose={handleClose}>
+                <h1>Heading</h1>
+                <img src={logo} alt='product'></img>
                 <h2>Product Details</h2>
                 <p>Here you can display more detailed information about the product.</p>
+                <p>Price</p>
             </SlidingWindow>
         </div>
     );
